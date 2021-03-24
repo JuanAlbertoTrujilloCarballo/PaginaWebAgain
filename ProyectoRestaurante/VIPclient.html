@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Cliente VIP</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/registroVIP.js"></script>
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDwwSLhhPzqUFPoyYdNsqWPAQ9VGPLMc3k",
+            authDomain: "restaurante-7c7ae.firebaseapp.com",
+            projectId: "restaurante-7c7ae",
+            storageBucket: "restaurante-7c7ae.appspot.com",
+            messagingSenderId: "648351859760",
+            appId: "1:648351859760:web:dafafffc425df11dfdd9f5",
+            measurementId: "G-7CLWWX9GP6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+    <div id="NoMarginBottomAndBlack-P" class="jumbotron">
+        <h1 class="gold-p">Bienvenidos al menú del restaurante</h1>
+        <p class="gold-p">Aquí podran ver la comida que hay, sus ingredientes principales y las calorías que aportan</p>
+    </div>
+    <nav id="green-P" class="navbar navbar-expand-md bg-null navbar-dark fixed-top">
+        <!-- Brand -->
+        <h2 class="navbar-brand, yellow-p">Pagina de Registro VIP</h2>
+        <div class="dropdown">
+            <button id="black-p_And_greenyellow-P_And_MarginLeft" class="btn btn-primary dropdown-toggle " type="button" data-toggle="dropdown">Menu
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a class="black-p" href="MainPage.html">Pagina Principal</a></li>
+                <li><a class="black-p" href="ReservesPage.html">Hacer reserva</a></li>
+                <li><a class="black-p" href="RestaurantMenu.html">Menu Restaurante</a></li>
+                <li><a class="black-p" href="VIPclient.html">Página de registro VIP</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="col col-xl col-sm col-lg col-md"></div>
+    <div class="col col-xl col-sm col-lg col-md">
+        <form id="VIP_Login">
+            <div class="form-group">
+                <p class="EnNegrita">Introduzca su email y contraseña por favor</p>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" class="form-control" placeholder="Introduzca su Correo Electrónico" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Contraseña:</label>
+                <input type="password" class="form-control" placeholder="Introduza su contraseña" id="pwd">
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Recuerdame
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col col-xl col-sm col-lg col-md">
+        <form id="VIP_Suscription">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="radio">
+                        <p class="EnNegrita">Elija como desea suscribirse</p>
+                        <label><input type="radio" name="optradio" checked id="radio1">Cliente Recurrente</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id="radio2">Cazador de Talentos</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <p class="EnNegrita">Elija si quiere alguna ventaja extra</p>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="extra1"> Poder llevarme comida a casa
+                    </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input"  id="extra2"> Poder llevar a mi mascota
+                    </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input"  id="extra3"> Plaza para mi coche
+                    </label>
+                    </div>
+                </li>
+            </ul>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <div class="col col-xl col-sm col-lg col-md">
+        <div class="form-group">
+            <label for="comment">Si tienen cualquier otra duda o sugerencia le agradeceríamos que la pusíera aquí</label>
+            <textarea class="form-control centered" rows="3" id="comment"></textarea>
+            <button id="MarginTop2" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

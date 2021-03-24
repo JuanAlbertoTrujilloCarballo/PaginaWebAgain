@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu del Restaurante</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="background1">
+  <div id="NoMarginBottomAndBlack-P" class="jumbotron">
+    <h1 class="gold-p">Bienvenidos al menú del restaurante</h1>
+    <p class="gold-p">Aquí podran ver la comida que hay, sus ingredientes principales y las calorías que aportan</p>
+  </div>
+  <nav id="green-P" class="navbar navbar-expand-md bg-null navbar-dark fixed-top">
+    <!-- Brand -->
+    <h2 class="navbar-brand, yellow-p">Menu Restaurante</h2>
+    <div class="dropdown">
+      <button id="black-p_And_greenyellow-P_And_MarginLeft" class="btn btn-primary dropdown-toggle " type="button"
+        data-toggle="dropdown">Menu
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a class="black-p" href="MainPage.html">Pagina Principal</a></li>
+          <li><a class="black-p" href="ReservesPage.html">Hacer reserva</a></li>
+          <li><a class="black-p" href="RestaurantMenu.html">Menu Restaurante</a></li>
+          <li><a class="black-p" href="VIPclient.html">Página de registro VIP</a></li>
+        </ul>
+      </div>
+    </nav>
+  <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+  <nav id="YellowGreen" data-spy="scroll" data-target=".navbar" data-offset="50"
+    class="navbar navbar-expand-sm">
+
+    <ul class="navbar-nav">
+      <li><a id="Black-p" href="#section1">Bocadillos</a></li>
+      <li><a id="MarginLeftAndBlack-p" href="#section2">Hamburguesas</a></li>
+      <li><a id="MarginLeftAndBlack-p2" href="#section3">Pizzas</a></li>
+      <li><a id="MarginLeftAndBlack-p3" href="#section4">Postres</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section 1 -->
+
+  <div class="row">
+    <div class="col col-xl col-sm col-lg col-md"></div>
+    <div class="col col-xl col-sm col-lg col-md">
+      <div id="section1">
+        <h1>Bocadillos</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Bocadillos Normales </th>
+              <th>Bocadillos Vegetarianos</th>
+              <th>Bocadillos Veganos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bocadillo de pollo (pollo, salsa...)</td>
+              <td>Bocadillo de atún (atún, salsa...)</td>
+              <td>Bocadillo mediterraneo (queso, salsa...)</td>
+            </tr>
+            <tr>
+              <td>700 calorias</td>
+              <td>500 calorias</td>
+              <td>220 calorias</td>
+            </tr>
+            <tr>
+              <td>Bocadillo de ternera (ternera, salsa...)</td>
+              <td>Bocadillo de tortilla (tortilla, salsa...)</td>
+              <td>Bocadillo de tofu (tofu, salsa...)</td>
+            </tr>
+            <tr>
+              <td>420 calorias</td>
+              <td>250 calorias</td>
+              <td>180 calorias</td>
+            </tr>
+            <tr>
+              <td>Bocadillo de pechuga (pechuga, salsa...)</td>
+              <td>Bocadillo de calamares (calamares, salsa...)</td>
+              <td>Bocadillo vegetal (vegetal, salsa...)</td>
+            </tr>
+            <tr>
+              <td>600 calorias</td>
+              <td>300 calorias</td>
+              <td>120 calorias</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="section2">
+        <h1>Hamburguesas</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Hamburguesas normales </th>
+              <th>Hamburguesas Vegetarianas</th>
+              <th>Hamburguesas Veganas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hamburguesa de pollo </td>
+              <td>Hamburguesa de coliflor</td>
+              <td>Hamburguesa de espinacas</td>
+            </tr>
+            <tr>
+              <td>Hamburguesa de ternera</td>
+              <td>Hamburguesa de falafel</td>
+              <td>Hamburguesa de tofu</td>
+            </tr>
+            <tr>
+              <td>Hamburguesa de cerdo</td>
+              <td>Hamburguesa de pescado</td>
+              <td>Hamburguesa de calabaza</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="section3">
+        <h1>Pizza</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Pizzas normales </th>
+              <th>Pizzas Vegetarianas</th>
+              <th>Pizzas Veganas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pizza Margarita</td>
+              <td>Pizza 4 quesos</td>
+              <td>Pizza de brocoli</td>
+            </tr>
+            <tr>
+              <td>Pizza Barbacoa</td>
+              <td>Pizza de atún</td>
+              <td>Pizza champiñones</td>
+            </tr>
+            <tr>
+              <td>Pizza boloñesa</td>
+              <td>Pizza de tomates cherry con queso</td>
+              <td>Pizza de berenjena</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="section4">
+        <h1>Postres</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Postres Frios </th>
+              <th>Postres caseros</th>
+              <th>Postres Veganos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Helado</td>
+              <td>Mousse de chocolate</td>
+              <td>Bizcocho vegano</td>
+            </tr>
+            <tr>
+              <td>Trozo de tarta</td>
+              <td>Queque</td>
+              <td>Manzanas asadas</td>
+            </tr>
+            <tr>
+              <td>Flan</td>
+              <td>Magdalenas</td>
+              <td>Muesli y yogur</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="col col-xl col-sm col-lg col-md"></div>
+    <div class="col col-xl col-sm col-lg col-md">
+      <img src="img/tendor_y_cuchillo_escalado.jpg" alt="Papitas">
+      <img src="img/tendor_y_cuchillo_escalado.jpg" alt="Papitas">
+      <img src="img/tendor_y_cuchillo_escalado.jpg" alt="Papitas">
+      <img src="img/tendor_y_cuchillo_escalado.jpg" alt="Papitas">
+      <img src="img/tendor_y_cuchillo_escalado.jpg" alt="Papitas">
+      <img src="img/tendor_y_cuchillo_escalado.jpg" alt="Papitas">
+      <img src="img/tendor_y_cuchillo_escalado.jpg" alt="Papitas">
+    </div>
+    <div class="col col-xl col-sm col-lg col-md"></div>
+    <div class="col col-xl col-sm col-lg col-md"></div>
+
+    <div class="col col-xl col-sm col-lg col-md">
+      <img src="img/tacos_escalado.jpg" alt="Papitas">
+      <img src="img/pinchito_escalado.jpg" alt="Papitas">
+      <img src="img/hamburguesa_escalado.jpg" alt="Papitas">
+      <img src="img/pizza_escalado.jpg" alt="Papitas">
+      <img src="img/flan_escalado.jpg" alt="Papitas">
+      <img src="img/crepe_escalado.jpg" alt="Papitas">
+    </div>
+    <div class="col col-xl col-sm col-lg col-md"></div>
+  </div>
+
+</body>
+
+</html>

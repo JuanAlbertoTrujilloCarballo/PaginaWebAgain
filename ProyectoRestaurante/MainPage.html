@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/ediciones.js"></script>
+</head>
+
+<body>
+
+    <div id="NoMarginBottomAndBlack-P" class="jumbotron">
+        <h1 class="gold-p">Bienvenidos al Restaurante del Felo Monzón</h1>
+        <p class="gold-p">Aquí podran hacer sus reservas, ver los menus, y algunas cosas más</p>
+
+        <nav id="green-P" class="navbar navbar-expand-md bg-null navbar-dark fixed-top">
+            <!-- Brand -->
+            <h2 class="navbar-brand, yellow-p">Pagina Principal</h2>
+
+            <!-- Toggler/collapsibe Button -->
+            <div class="dropdown">
+                <button id="black-p_And_greenyellow-P_And_MarginLeft" class="btn btn-primary dropdown-toggle  " type="button" data-toggle="dropdown">Menu
+          <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a class="black-p" href="MainPage.html">Pagina Principal</a></li>
+                    <li><a class="black-p" href="ReservesPage.html">Hacer reserva</a></li>
+                    <li><a class="black-p" href="RestaurantMenu.html">Menu Restaurante</a></li>
+                    <li><a class="black-p" href="VIPclient.html">Página de registro VIP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a id="Black-p" href="MainPage.html">Pagina Principal</a></li>
+        <li><a id="MarginLeftAndBlack-p" href="index(reserve).html">Reserva</a></li>
+        <li><a id="MarginLeftAndBlack-p2" href="index(food).html">Carta</a></li>
+        <li><a id="MarginLeftAndBlack-p3" href="index(VIP).html">Membresía VIP</a></li>
+        <li><a id="MarginLeftAndBlack-p4" type="application/rss+xml" href="xml/rss.xml">RSS  </a></li>
+    </ul>
+
+
+
+    <div class="media">
+        <div class="media-left media-middle">
+            <img src="img/FeloMonzón.jpg" class="media-object" style="width:500px" alt="Foto de distribucion del restaurante">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Aquí podrán ver algunas fotos del restaruante, así como de su comida </h4>
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/amorcito1escalado2.png" alt="Foto de restaurante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/amorcito2escalado2.jpg" alt="Foto de restaurante 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/oyakodon_escalado.jpg" alt="Oyakodon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pinchitos_saludables_escalado.jpg" alt="Pinchitos Saludables">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
