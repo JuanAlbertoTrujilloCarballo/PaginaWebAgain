@@ -23,31 +23,6 @@
 
 <body>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-            apiKey: "AIzaSyDwwSLhhPzqUFPoyYdNsqWPAQ9VGPLMc3k",
-            authDomain: "restaurante-7c7ae.firebaseapp.com",
-            projectId: "restaurante-7c7ae",
-            storageBucket: "restaurante-7c7ae.appspot.com",
-            messagingSenderId: "648351859760",
-            appId: "1:648351859760:web:dafafffc425df11dfdd9f5",
-            measurementId: "G-7CLWWX9GP6"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-
-
     <div id="NoMarginBottomAndBlack-P" class="jumbotron">
         <h1 class="gold-p">Bienvenidos a la pagina de Reserva</h1>
         <p class="gold-p">Aquí podrá introducir sus datos para efectuar su reserva, elegir que día desea venir, en que mesa quiere sentarse y decidir cuantos asientos quiere</p>
@@ -63,83 +38,80 @@
                 <li><a class="black-p" href="ReservesPage.html">Hacer reserva</a></li>
                 <li><a class="black-p" href="RestaurantMenu.html">Menu Restaurante</a></li>
                 <li><a class="black-p" href="VIPclient.html">Página de registro VIP</a></li>
+                <li><a class="black-p" type="application/rss+xml" href="xml/rss.xml">RSS  </a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="col col-xl col-sm col-lg col-md"></div>
-    <div class="col col-xl col-sm col-lg col-md">
-        <div class="form-group">
-            <p class="EnNegrita">Introduzca sus datos</p>
-            <label for="text">Nombre:</label>
-            <input type="text" class="form-control" id="text">
-        </div>
-        <div class="form-group">
-            <label for="text">Apellidos:</label>
-            <input type="text" class="form-control" id="text2">
-        </div>
-        <div class="form-group">
-            <label for="text">DNI:</label>
-            <input type="text" class="form-control" id="text3">
-        </div>
-        <div class="form-group">
-            <label for="number">Tarjeta de Credito:</label>
-            <input type="number" class="form-control" id="number">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="form-group">
+                <p class="EnNegrita">Introduzca sus datos</p>
+                <label for="Name">Nombre:</label>
+                <input type="text" class="form-control" id="Name">
+            </div>
+            <div class="form-group">
+                <label for="last_Name">Apellidos:</label>
+                <input type="text" class="form-control" id="last_Name">
+            </div>
+            <div class="form-group">
+                <label for="DNI">DNI:</label>
+                <input type="text" class="form-control" id="DNI">
+            </div>
+            <div class="form-group">
+                <label for="credit_card">Tarjeta de Credito:</label>
+                <input type="number" class="form-control" id="credit_card">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+
+
+            <div class="radio">
+                <p class="EnNegrita">Elija donde prefiere sentarse</p>
+                <label><input type="radio" name="optradio">Cerca de la ventana</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Cerca del baño</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Cerca de la ventana</label>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">¿Cúantos asientos?</label>
+                <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+                <button id="MarginTop3" type="submit" class="btn btn-primary">Enviar</button>
+            </div>
         </div>
     </div>
-    <div class="col col-xl col-sm col-lg col-md">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <div class="radio">
-                    <p class="EnNegrita">Elija el día que desea hacer la reserva</p>
-                    <label><input type="radio" name="optradio" checked>Jueves</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio">Viernes</label>
-                </div>
+
+    <div class="col-sm-1"></div>
 
 
-            </li>
-            <li class="list-group-item">
+    <div class="col-sm-6">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>DNI</th>
+                    <th>Tarjeta de credito</th>
+                    <th>Email</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
 
-
-                <svg id="classroom">
-          
-            <rect class="seat" id="seat-1"/>
-            <rect class="seat" id="seat-3" />
-            <rect class="seat" id="seat-4" />
-            <rect class="seat" id="seat-6" />
-            <rect class="seat" id="seat-7" />
-            <rect class="seat" id="seat-9" />
-            <rect class="seat" id="seat-10" />
-            <rect class="seat" id="seat-12" />
-            <rect class="seat" id="seat-13" />
-            <rect class="seat" id="seat-15" />
-            
-        </svg>
-
-                <form id="form-seat">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Introduza su nombre" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="seat">Sitio:</label>
-                        <input type="number" class="form-control" placeholder="Escoja un sitio" id="seat">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Assign seat</button>
-                </form>
-        </ul>
-        <div class="form-group">
-            <label for="sel1">¿Cúantos asientos?</label>
-            <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-            <button id="MarginTop3" type="submit" class="btn btn-primary">Enviar</button>
-        </div>
+            </tbody>
+        </table>
     </div>
 
 
